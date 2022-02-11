@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="hang2.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#profile" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFILE</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">Activity <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="quiz.html" class="w3-bar-item w3-button">Brain Quiz</a>
+          <a href="#hangman.html" class="w3-bar-item w3-button">Hangman</a>
+          <a href="#" class="w3-bar-item w3-button">Blogs</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+<div class="wrapper">
+   <h1>Hangman</h1>
+    <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+</div>
+<div class="wrapper">
+    <div id="buttons">
+    </div>  
+    <p id="catagoryName"></p>
+    <div id="hold">
+    </div>
+    <p id="mylives"></p>
+    <p id="clue">Clue -</p>  
+     <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+    <div class="container">
+      <button id="hint">Hint</button>
+      <button id="reset">Play again</button>
+    </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
+
+
